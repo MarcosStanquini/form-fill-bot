@@ -13,8 +13,8 @@ git clone https://github.com/MarcosStanquini/django-crud-example
 
 Create a Virtual Environment:
 
-bash
-```
+```bash
+
 python -m venv venv
 ```
 
