@@ -22,29 +22,29 @@ for i,topic in enumerate(table['Topic']):
 
     username.send_keys(config("USERNAME_TEST"))
     password.send_keys(config("PASSWORD"))
-    sleep(5)
+    sleep(3)
 
     login_attempt = driver.find_element(By.XPATH, '/html/body/form/button').click()
 
     driver.find_element(By.XPATH, '/html/body/a[1]').click()
     driver.find_element(By.XPATH, '/html/body/a[3]').click()
-    sleep(5)
+    sleep(3)
     input_entries = driver.find_element(By.ID, "id_text").send_keys(str(topics))
     driver.find_element(By.XPATH, '/html/body/form/button').click()
-    sleep(5)
+    sleep(3)
     topic_xpath = f"//a[contains(text(), '{topics}')]"
     driver.find_element(By.XPATH, topic_xpath).click()
-    sleep(5)
-    driver.find_element(By.XPATH, '/html/body/p[5]/a').click()
-    driver.find_element(By.XPATH, '//*[@id="id_text"]').click().send_keys(str(entries))
     sleep(3)
-
-   
+    driver.find_element(By.XPATH, '/html/body/p[5]/a').click()
+    driver.find_element(By.XPATH, '//*[@id="id_text"]').send_keys(str(entries))
+    sleep(3)
+    driver.find_element(By.XPATH, '/html/body/form/button').click()
+    sleep(3)
+    driver.find_element(By.XPATH, '/html/body/a[1]/h1').click()
     
 
 
-
-    driver.quit()
+driver.quit()
 
 
 
