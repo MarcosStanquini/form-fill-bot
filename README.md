@@ -46,7 +46,7 @@ Download the Form Fill Bot Repository:
 
 ```bash
 
-git clone [URL_of_the_form_fill_bot_repository]
+git clone https://github.com/MarcosStanquini/form-fill-bot.git
 ```
 
 Create a .env File:
