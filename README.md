@@ -56,7 +56,7 @@ Add the following lines and replace placeholders with your actual credentials:
 ```env
 
 USERNAME_TEST=your_username
-USERNAME_PASSWORD=your_password
+PASSWORD=your_password
 ```
 
 Run the Form Fill Bot:
